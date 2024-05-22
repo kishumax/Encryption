@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVideoencryption = new DevExpress.XtraEditors.SimpleButton();
+            this.btnencryption = new DevExpress.XtraEditors.SimpleButton();
             this.btndecryption = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
             // 
-            // btnVideoencryption
+            // btnencryption
             // 
-            this.btnVideoencryption.Appearance.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVideoencryption.Appearance.Options.UseFont = true;
-            this.btnVideoencryption.Location = new System.Drawing.Point(36, 30);
-            this.btnVideoencryption.Name = "btnVideoencryption";
-            this.btnVideoencryption.Size = new System.Drawing.Size(164, 47);
-            this.btnVideoencryption.TabIndex = 0;
-            this.btnVideoencryption.Text = "Video Encryption";
-            this.btnVideoencryption.Click += new System.EventHandler(this.btnVideoencryption_Click);
+            this.btnencryption.Appearance.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnencryption.Appearance.Options.UseFont = true;
+            this.btnencryption.Location = new System.Drawing.Point(36, 30);
+            this.btnencryption.Name = "btnencryption";
+            this.btnencryption.Size = new System.Drawing.Size(164, 47);
+            this.btnencryption.TabIndex = 0;
+            this.btnencryption.Text = "Data Encryption";
+            this.btnencryption.Click += new System.EventHandler(this.btnEncryption_Click);
             // 
             // btndecryption
             // 
@@ -51,8 +51,8 @@
             this.btndecryption.Name = "btndecryption";
             this.btndecryption.Size = new System.Drawing.Size(164, 47);
             this.btndecryption.TabIndex = 1;
-            this.btndecryption.Text = "Video Decryption";
-            this.btndecryption.Click += new System.EventHandler(this.btndecryption_Click);
+            this.btndecryption.Text = "Data Decryption";
+            this.btndecryption.Click += new System.EventHandler(this.btnDecryption_Click);
             // 
             // frmencryption
             // 
@@ -60,7 +60,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(226, 173);
             this.Controls.Add(this.btndecryption);
-            this.Controls.Add(this.btnVideoencryption);
+            this.Controls.Add(this.btnencryption);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmencryption";
@@ -72,7 +72,7 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.SimpleButton btnVideoencryption;
+        private DevExpress.XtraEditors.SimpleButton btnencryption;
         private DevExpress.XtraEditors.SimpleButton btndecryption;
     }
 }
